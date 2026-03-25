@@ -32,7 +32,11 @@ jobs:
     - name: Setup Pages
       uses: actions/configure-pages@v5
       with:
+<<<<<<< HEAD
         enablement: true
+=======
+        enable: true
+>>>>>>> 356080a4c0365876401f94b4347b6e1299eeda17
       
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
