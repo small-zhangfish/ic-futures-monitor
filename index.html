@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IC期货基差监控</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .last-updated {
+            text-align: right;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .chart-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .stats { 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>IC期货基差监控</h1>
+        <div class="last-updated">最后更新：2026-03-25 05:20:57</div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value">70.6</div>
+                <div class="stat-label">当月-下月/月差</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">72.6</div>
+                <div class="stat-label">当月-当季/月差</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">63.08</div>
+                <div class="stat-label">当月-下季/月差</div>
+            </div>
+        </div>
+        
+        <div class="chart-container">
+            <h2>基差趋势图</h2>
+            <img src="基差趋势图.png" alt="基差趋势图">
+        </div>
+        
+        <h2>最近一周数据</h2>
+        <table>
+            <tr>
+                <th>日期</th>
+                <th>当月合约</th>
+                <th>当月-下月/月差</th>
+                <th>当月-当季/月差</th>
+                <th>当月-下季/月差</th>
+            </tr>
+
+            <tr>
+                <td>2026-03-13</td>
+                <td>IC2603</td>
+                <td>48.8</td>
+                <td>61.0</td>
+                <td>58.4</td>
+            </tr>
+
+            <tr>
+                <td>2026-03-16</td>
+                <td>IC2603</td>
+                <td>41.6</td>
+                <td>58.33</td>
+                <td>56.6</td>
+            </tr>
+
+            <tr>
+                <td>2026-03-17</td>
+                <td>IC2603</td>
+                <td>50.0</td>
+                <td>63.4</td>
+                <td>61.3</td>
+            </tr>
+
+            <tr>
+                <td>2026-03-18</td>
+                <td>IC2603</td>
+                <td>55.0</td>
+                <td>67.2</td>
+                <td>61.97</td>
+            </tr>
+
+            <tr>
+                <td>2026-03-19</td>
+                <td>IC2603</td>
+                <td>64.2</td>
+                <td>71.8</td>
+                <td>65.37</td>
+            </tr>
+
+            <tr>
+                <td>2026-03-23</td>
+                <td>IC2604</td>
+                <td>50.0</td>
+                <td>76.3</td>
+                <td>67.72</td>
+            </tr>
+
+            <tr>
+                <td>2026-03-24</td>
+                <td>IC2604</td>
+                <td>70.6</td>
+                <td>72.6</td>
+                <td>63.08</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>
