@@ -9,10 +9,6 @@ on:
 jobs:
   crawl:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
     steps:
     - uses: actions/checkout@v4
       
@@ -29,19 +25,9 @@ jobs:
     - name: Run crawl script
       run: python get_stata.py
       
-    - name: Setup Pages
-      uses: actions/configure-pages@v5
-      with:
-<<<<<<< HEAD
-        enablement: true
-=======
-        enable: true
->>>>>>> 356080a4c0365876401f94b4347b6e1299eeda17
-      
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: .
-      
     - name: Deploy to GitHub Pages
-      uses: actions/deploy-pages@v4
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: .
+        publish_branch: gh-pages
