@@ -205,7 +205,7 @@ def generate_html(df):
 <body>
     <div class="container">
         <h1>IC期货基差监控</h1>
-        <div class="last-updated">最后更新：{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</div>
+        <div class="last-updated">最后更新：{(datetime.datetime.now() + datetime.timedelta(hours=8)).strftime('%Y-%m-%d %H:%M:%S')}</div>
         
         <div class="stats">
             <div class="stat-card">
