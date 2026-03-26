@@ -100,7 +100,7 @@ def calculate_day(trading_date):
 def plot_basis_trend(df):
     # 设置字体以确保中文显示正常
     plt.rcParams["font.family"] = "sans-serif"
-    plt.rcParams["font.sans-serif"] = ["DejaVu Sans", "Arial Unicode MS", "Helvetica", "Arial"]
+    plt.rcParams["font.sans-serif"] = ["SimHei", "Microsoft YaHei", "SimSun", "DejaVu Sans", "Arial Unicode MS", "Helvetica", "Arial"]
     plt.rcParams["axes.unicode_minus"] = False
 
     plt.figure(figsize=(12, 5))
