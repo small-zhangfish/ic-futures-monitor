@@ -2,7 +2,7 @@ name: IC Futures Data Crawler
 
 on:
   schedule:
-    - cron: '45 15 * * 1-5'  # 周一到周五 15:45 运行
+    - cron: '30 08 * * 1-5'  # 周一到周五 16:30 北京时间运行 (UTC+8)
   push:
     branches: [ main ]
   workflow_dispatch:  # 允许手动触发
